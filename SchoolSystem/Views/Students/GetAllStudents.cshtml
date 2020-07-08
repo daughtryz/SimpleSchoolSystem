@@ -1,0 +1,11 @@
+﻿
+@model SchoolSystem.ViewModels.Students.AllStudentsViewModel;
+
+
+<ul class="list-group">
+    @foreach (var student in Model.Students)
+    {
+        <li class="list-group-item">@student.FirstName @student.LastName FacultyNum:@student.FacultyNumber Gender:@student.Gender Number In Class:@student.NumberInClass</li>
+    }
+
+</ul>

@@ -1,0 +1,11 @@
+﻿
+@model SchoolSystem.ViewModels.Teachers.AllTeachersViewModel;
+
+
+    <ul class="list-group">
+        @foreach (var teacher in Model.Teachers)
+        {
+        <li class="list-group-item">@teacher.FirstName @teacher.LastName Gender:@teacher.Gender Subject:@teacher.Subject</li>
+        }
+
+    </ul>
